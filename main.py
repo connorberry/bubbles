@@ -52,6 +52,11 @@ def main():
             #print(f"!DEBUG! updating {u}")
             u.update(dt)
 
+        for a in asteroids:
+            if a.collided(player):
+                print("Game over!")
+                exit()
+
         # draw
         screen.fill(0)
         #player.draw(screen)
