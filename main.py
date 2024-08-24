@@ -65,7 +65,7 @@ def main():
         for a in asteroids:
             for s in shots:
                 if a.collided(s):
-                    a.kill()
+                    a.split()
                     s.kill()
 
         # draw
